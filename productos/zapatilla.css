@@ -1,0 +1,114 @@
+*{
+   background-color: antiquewhite;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.titulo h1{
+    display: inline-block;
+    border: 3px solid black;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+   /* line-height: ;*/
+    font-weight: 7000; /*grosor de letra*/
+    padding: 10px 50px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+
+
+}
+.parrafoPrincipal p{
+    height: 30px;
+    margin-top: 30px;
+    font-size: 25px;
+    background-color: grey;
+    text-align: center;
+    color: aliceblue;
+   
+}
+
+.articulos{
+   max-width: 1100px;
+    width: 100% ;
+    margin: 40px auto;
+    display: flex;
+   
+   
+}
+.mostrar{
+   width: 130%;
+  overflow: scroll;
+  
+   
+
+    
+}
+.mostrar .fila{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 86px;
+    margin-right: 60px;
+    object-fit: cover;
+    overflow: visible;
+    min-width: 180px;
+    
+    
+    
+ 
+    
+}
+.mostrar .fila .imag{
+ 
+    width: 295px;
+    padding: 20px;
+    height: 250px;
+    text-align: center;
+    margin: 0 2px;
+    transition: .3s;
+    cursor: pointer;
+    
+    object-fit: cover;
+    
+}
+
+.mostrar .fila .imag:hover{
+    transform: scale(1.2);
+    
+}
+
+.mostrar .fila .imag img{
+    width: 100%;    
+    margin: 2px 0;
+    object-fit: cover;
+}
+.mostrar .fila .imag .descripcion{
+    background-color: white;
+    color:black;
+    font-size: 20px;
+    font-family: fantasys;
+    font-weight: bold;
+   
+}
+  .mostrar .fila .imag .descripcion:hover{
+    background-color: ghostwhite;
+   color: brown;
+  }
+.final .parrafoFinal{
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color:pink;
+    text-align: center;
+    border: 3px solid black;
+
+}
+.final 
+{
+    width: 30em;
+    height: 30px;
+    margin-left: 400px;
+    margin-top: 80px;
+    background-color: darkgray;
+}

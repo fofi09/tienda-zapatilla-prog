@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagina de zapatillas</title>
+    
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="..//productos/zapatillas.html">
+    
+</head>
+<body>
+    
+    <div id="header">
+        <ul class="nav">
+            <li><a href="">tienda</a>
+            <ul>
+                <li><a href="..//productos/zapatillas.html">ver productos</a></li>
+
+            </ul></li>
+            <li><a href="..//menu/talle.html">¿Cómo saber mi talle?</a></li>
+            <li><a href="">leer más</a>
+            <ul><li><a href="..//menu/devoluciones.html">¿porque no hay devolucion?</a></li></ul></li>
+            
+            </li>
+        </ul>
+    </div>
+  
+
+
+
+
+
+      
+
+      </div>
+      <div class="l" id="e"></div>
+    <br> <br> <br>
+
+  <marquee>
+    <h1>Un poco de informacion sobre nuestro emprendimiento:
+    </h1>
+  </marquee>
+
+   
+        <br><br><br>
+    
+    <p>Las zapatillas importadas son una opción popular para aquellos que buscan variedad y calidad en su calzado. <br>Estas zapatillas son fabricadas en otros países y luego son importadas para su venta en diferentes mercados. <br> <br>
+
+        Una de las ventajas de las zapatillas importadas es la amplia gama de estilos y marcas disponibles. Al ser producidas en diferentes países, se pueden encontrar diseños únicos y exclusivos que pueden no estar disponibles en el mercado local. Esto permite que las personas tengan acceso a zapatillas de marcas reconocidas a nivel internacional y puedan expresar su estilo de una manera única. <br> <br>
+        
+        Además, las zapatillas importadas también suelen destacarse por su calidad. Muchas veces, los procesos de fabricación en otros países cuentan con estándares más altos y utilizan materiales de alta calidad. Esto se traduce en zapatillas duraderas y cómodas que brindan un mejor rendimiento y satisfacen las necesidades de los usuarios. <br> <br>
+        
+        Sin embargo, es importante tener en cuenta que las zapatillas importadas pueden tener un precio más elevado debido a los costos de importación y transporte. Además, es necesario prestar atención a las tallas y conversiones de medidas, ya que pueden variar dependiendo del país de origen.
+        </p>
+    
+        
+
+
+        <script>
+            
+        const slides = document.querySelectorAll('.slide');
+        let currentSlide = 0;
+        
+        function showSlide(index) {
+          slides.forEach((slide) => {
+            slide.classList.remove('active');
+          });
+        
+          slides[index].classList.add('active');
+        }
+        
+        function nextSlide() {
+          currentSlide++;
+        
+          if (currentSlide >= slides.length) {
+            currentSlide = 0;
+          }
+        
+          showSlide(currentSlide);
+        }
+        
+        function previousSlide() {
+          currentSlide--;
+        
+          if (currentSlide < 0) {
+            currentSlide = slides.length - 1;
+          }
+        
+          showSlide(currentSlide);
+        }
+        
+        document.querySelector('.next-button').addEventListener('click', nextSlide);
+        document.querySelector('.previous-button').addEventListener('click', previousSlide);
+        
+        setInterval(nextSlide, 5000); // Cambiar de diapositiva cada 5 segundos
+
+        </script>
+            
+        </body>
+        </html>

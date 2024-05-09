@@ -112,3 +112,63 @@
     margin-top: 80px;
     background-color: darkgray;
 }
+.btnCarrito{
+    
+    left: 50px;
+}
+.iconoC{
+    
+    width: 2%;
+    height: 2%;
+}
+.iconoCarrit{
+    
+    width: 30px;
+    height: 30px;
+    margin-left: 1280px;
+    margin-top: 10px;
+
+}
+#carrito{
+    color: #000;
+    flex-wrap: nowrap;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 500px;
+    border: 2px solid black;
+    margin-left: 1280px;
+    
+    
+    
+    
+}
+#lista-carrito{
+    color: black;
+    width: 200px;
+    height: 50x;
+    border: 1px solid black;
+    white-space: 10px;
+    flex-wrap: nowrap;
+    margin-left: -150px;
+   background-color: #000;
+    
+}
+#total-precio{
+    color: navy;
+    margin-left: 1250px;
+    /*1130*/
+    
+}
+#vaciar-carrito{
+    
+    
+    margin-left: 1250px;
+    width: 10%;
+    
+}
+.agregar-carrito{
+    color: #000;
+    
+    text-decoration: none;
+}
+
+

@@ -3,14 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pagina de sofia</title>
+    <title>pagina de zapatillas</title>
     <link rel="stylesheet" href="zapatilla.css">
+    <link rel="stylesheet" href="..//menu/index.html">
+    <link rel="stylesheet" href="..//menu/index.css">
+    <link rel="stylesheet" href="..//menu/talle.html">
+    
+    
+    </section>
+    <style>
+        #carrito {
+            display: none;
+            
+            
+        }
+    </style>
+     <style>
+        #vaciar-carrito {
+            border: 0cap;
+            
+            
+        }
+
+    </style>
+     <style>
+        #lista-carrito {
+            border: 0cap;
+            
+            
+        }
+    </style>
 
 </head>
 <body>
+
+   
+    
+ 
+  
+
+   
+     <div class="iconoC" onclick="mostrarCarrito()">
+        
+        <ul class="nav">
+            <li><a href="..//menu/index.html">Inicio</a>
+            </li>
+          
+            
+            </li>
+        </ul>
+
+
+
+
+        <img src="..//imagenes/carrito1.jpg" alt="" class="iconoCarrit">
+     </div>
+
     
     <main>
+       
+         <div class="iconoC">
         
+
+                <div id="carrito">
+                    
+                    <table id="lista-carrito">
+                    
+                        <tr>
+                            
+                            <th>Nombre</th>
+                            <th>Precio</th>
+                            <th>Cantidad</th>
+                            <th></th><!--para eliminar-->
+                        </tr>
+
+                
+                    <tbody></tbody>
+                </table>
+                </div>
+                
+    
+         </div>
+         <div id="total-precio"></div>
+
+         <div class="iconoC">
+            <button id="vaciar-carrito">Vaciar Carrito</button>
+        </div>
+          
         <section class="titulo">
             <h1> 
             ZAPATILLAS IMPORTADAS
@@ -23,31 +102,64 @@
 
         </section>
         
-        <article class="articulos">
+        <article class="articulos" id="lista-zapatilla">
             <div class="mostrar" id="mostrar">
                 <div class="fila">
                     <div class="imag">
-                        <div class="articulos-foto">
+
+                        <div class="articulos-foto"> 
+                            <div class="zapatilla" data-nombre="zap1" data-precio="90000" data-cantidad="1" onclick="agregarAlCarrito(event)" >
                             <img src="..//imagenes/zap1.jpg" alt="">
+                            </div>
                             <p class="descripcion"> Hay suficiente stok <br> $90.000</p>
+
+                     <!--  <a href="#" class="u-full-width button-primary button input agregar-carrito"data-id="1">Agregar al carritoo</a>-->
+                            <a href="#" class="agregar-carrito" data-nombre="Zapatilla 1" data-precio="90000" data-cantidad="1" >Agregar al carrito</a>
+                       
+                            
+                       
                         </div>
                     </div>
                     <div class="imag">
                         <div class="articulos-foto">
+                            <div class="zapatilla" data-nombre="zap2" data-precio="120000" data-cantidad="1">
+                                
                             <img src="..//imagenes/z12.jpg" alt="">
+                            </div>
+        
                             <p class="descripcion">Modelo exlusivo<br> $120.000</p>
+                            
+                            <a href="#" class="agregar-carrito" data-nombre="Modelo exlusivo" data-precio="12000" data-cantidad="1">Agregar al carrito</a>
+                       
+                           
+                       
                         </div>
                     </div>
                     <div class="imag">
                         <div class="articulos-foto">
+                            <div class="zapatilla" data-nombre="zapa3" data-precio="60000" data-cantidad="1">
                             <img src="..//imagenes/zapa3.jpg" alt="">
+                            </div>
                             <p class="descripcion"> Mas vendido del mes <br> $60.000</p>
+                           
+                            <a href="#" class="agregar-carrito" data-nombre="mas vendida" data-precio="60000" data-cantidad="1" >Agregar al carrito</a>
+                       
+             
+                        
+                           
                         </div>
+
                     </div>
                     <div class="imag">
                         <div class="articulos-foto">
+                            <div class="zapatilla" data-nombre="zap1" data-precio="90000" data-cantidad="1">
                             <img src="..//imagenes/zap8.jpg" alt="">
+                            </div>
                             <p class="descripcion">Unisex <br> $95.000</p>
+
+                            <a href="#" class="agregar-carrito" data-nombre="Zapatilla unisex" data-precio="95000" data-cantidad="1" >Agregar al carrito</a>
+                            
+                           
                         </div>
                     </div>
 
@@ -55,26 +167,47 @@
           <div class="fila">
             <div class="imag">
                 <div class="articulos-foto">
+                    <div class="zapatilla" data-nombre="zap1" data-precio="90000" data-cantidad="1">
                     <img src="..//imagenes/zap9.jpg" alt="">
+                    </div>
                     <p class="descripcion">¡Oferta especial! <br> $80.000</p>
+
+                    
+                    <a href="#" class="agregar-carrito" data-nombre="¡Oferta especial" data-precio="80000" data-cantidad="1">Agregar al carrito</a>
                 </div>
             </div>
             <div class="imag">
                 <div class="articulos-foto">
+                    <div class="zapatilla" data-nombre="zap1" data-precio="90000" data-cantidad="1">
                     <img src="..//imagenes/zapa5.jpg" alt="">
+                    </div>
                     <p class="descripcion">¡Oferta especial!<br> $85.000</p>
+
+                    <a href="#" class="agregar-carrito" data-nombre="¡Oferta especial" data-precio="85000" data-cantidad="1">Agregar al carrito</a>
+                
+                        <!--jhjkg--> 
                 </div>
             </div>
             <div class="imag">
                 <div class="articulos-foto">
+                    <div class="zapatilla" data-nombre="zap1" data-precio="90000" data-cantidad="1">
                     <img src="..//imagenes/z5.jpg" alt="">
+                    </div>
                     <p class="descripcion"> Nuevo modelo <br> $67.000</p>
+
+                
+                    <a href="#" class="agregar-carrito" data-nombre="Nuevo modelo" data-precio="67000" data-cantidad="1">Agregar al carrito</a>
+                        
                 </div>
             </div>
             <div class="imag">
                 <div class="articulos-foto">
+                    <div class="zapatilla" data-nombre="zap1" data-precio="90000" data-cantidad="1">
                     <img src="..//imagenes/z11.jpg" alt="">
+                    </div>
                     <p class="descripcion"> Hay stock! <br> $70.000</p>
+                    <a href="#" class="agregar-carrito" data-nombre="Hay stock" data-precio="70000" data-cantidad="1">Agregar al carrito</a>
+                        
                 </div>
                </div>
 
@@ -87,26 +220,48 @@
              <div class="fila">
                 <div class="imag">
                     <div class="articulos-foto">
+                        <div class="zapatilla" data-nombre="zap1" data-precio="90000" data-cantidad="1">
                         <img src="..//imagenes/z1.jpg" alt="">
+                        </div>
                         <p class="descripcion">¡Oferta especial! <br> $80.000</p>
+
+                
+                        <a href="#" class="agregar-carrito" data-nombre="¡Oferta especial" data-precio="80000" data-cantidad="1">Agregar al carrito</a>
+                        
                     </div>
                 </div>
                 <div class="imag">
                     <div class="articulos-foto">
+                        <div class="zapatilla" data-nombre="zap1" data-precio="90000" data-cantidad="1">
                         <img src="..//imagenes/zapa2.jpg" alt="">
+                        </div>
                         <p class="descripcion">¡Oferta especial!<br> $85.000</p>
+
+                        
+                        <a href="#" class="agregar-carrito" data-nombre="¡Oferta especial" data-precio="85000" data-cantidad="1">Agregar al carrito</a>
+                        
                     </div>
                 </div>
                 <div class="imag">
                     <div class="articulos-foto">
+                        <div class="zapatilla" data-nombre="nuevo modelo" data-precio="67000" data-cantidad="1">
                         <img src="..//imagenes/z33.jpg" alt="">
+                        </div>
                         <p class="descripcion"> Nuevo modelo <br> $67.000</p>
+
+                        <a href="#" class="agregar-carrito" data-nombre="¡nuevo modelo" data-precio="67000" data-cantidad="1" >Agregar al carrito</a>
+                        
                     </div>
                 </div>
                 <div class="imag">
                     <div class="articulos-foto">
+                        <div class="zapatilla" data-nombre="zap1" data-precio="90000" data-cantidad="1">
                         <img src="..//imagenes/z4.jpg" alt="">
+                        </div>
                         <p class="descripcion"> Hay stock! <br> $70.000</p>
+
+                        
+                        <a href="#" class="agregar-carrito" data-nombre="¡Oferta especial" data-precio="70000" data-cantidad="1" >Agregar al carrito</a>
                     </div>
                    </div>
 
@@ -126,8 +281,95 @@
        
     </footer>
     <script>
+
     
-    </script>
+    const carrito = [];
+
+    function agregarAlCarrito(event) {
+        event.preventDefault(); // Evita que el enlace se comporte como un enlace normal
+      
+        // Obtén los datos del artículo seleccionado
+        const nombre = event.target.dataset.nombre;
+        const precio = parseFloat(event.target.dataset.precio);
+        const cantidad = parseInt(event.target.dataset.cantidad);
+      
+        // Crea un objeto para representar el artículo seleccionado
+        //verifica se el articulo ya esta 
+        const itemExistente = carrito.find(item => item.nombre === nombre);
+             if (itemExistente) {
+        itemExistente.cantidad += cantidad; // Incrementar la cantidad
+             } else {
+        const item = {
+            nombre: nombre,
+            precio: precio,
+            cantidad: cantidad
+        };
+        carrito.push(item);4
+    }
+        actualizarCarrito();
+}
+
   
+    
+
+    function actualizarCarrito() {
+        const carritoElemento = document.getElementById('lista-carrito');
+        const carritoHTML = carrito.map(item => `
+          <tr>
+            <td>${item.nombre}</td> 
+            <td>${item.precio}</td>
+            <td>${item.cantidad}</td>
+            <td><button class="eliminar-item" data-index="$[index]">Eliminarr</button></td>
+          </tr>
+        `).join('');
+      
+        carritoElemento.innerHTML = carritoHTML;
+      
+        // Calcula el total de precios
+        const total = carrito.reduce((sum, item) => sum + (item.precio * item.cantidad), 0);
+        const totalPrecio = document.getElementById('total-precio');
+        totalPrecio.textContent = `Total: $${total.toFixed(2)}`;
+
+
+
+        
+
+
+    
+    }
+    ////////////////////////////////////////
+    
+function mostrarCarrito() {
+    const carritoElemento = document.getElementById('carrito');
+    carritoElemento.style.display = 'flex';
+
+   
+    document.getElementById('vaciar-carrito').addEventListener('click', function() {
+    carrito.length = 0;
+    actualizarCarrito();
+});
+
+
+
+document.querySelectorAll('.agregar-carrito').forEach(button => {
+    button.addEventListener('click', agregarAlCarrito);
+
+
+    
+});
+
+document.querySelectorAll('.eliminar-item').forEach(button => {
+    button.addEventListener('click', function() {
+        const index = parseInt(this.dataset.index);
+        carrito.splice(index, 1);
+        actualizarCarrito();
+        
+    });
+
+
+});
+}
+    </script>
+
 </body>
 </html>
